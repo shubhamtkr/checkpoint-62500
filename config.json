@@ -1,0 +1,46 @@
+{
+  "activation_freq": 10,
+  "architectures": [
+    "HyenaDNAForSequenceClassification"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_hyena.HyenaConfig",
+    "AutoModel": "modeling_hyena.HyenaDNAModel",
+    "AutoModelForCausalLM": "modeling_hyena.HyenaDNAForCausalLM",
+    "AutoModelForSequenceClassification": "modeling_hyena.HyenaDNAForSequenceClassification"
+  },
+  "d_inner": 1024,
+  "d_model": 256,
+  "dtype": "float32",
+  "emb_dim": 5,
+  "embed_dropout": 0.1,
+  "filter_order": 64,
+  "hyena_dropout": 0.0,
+  "hyena_filter_dropout": 0.0,
+  "hyena_order": 2,
+  "id2label": {
+    "0": "enhancer",
+    "1": "junk",
+    "2": "promoter"
+  },
+  "initializer_range": 0.02,
+  "label2id": {
+    "enhancer": 0,
+    "junk": 1,
+    "promoter": 2
+  },
+  "layer_norm_epsilon": 1e-05,
+  "max_seq_len": 32770,
+  "model_type": "hyenadna",
+  "n_layer": 4,
+  "num_inner_mlps": 2,
+  "pad_token_id": 4,
+  "pad_vocab_size_multiple": 8,
+  "problem_type": "single_label_classification",
+  "short_filter_order": 3,
+  "tie_word_embeddings": false,
+  "train_freq": true,
+  "transformers_version": "4.57.1",
+  "use_bias": true,
+  "vocab_size": 12
+}
